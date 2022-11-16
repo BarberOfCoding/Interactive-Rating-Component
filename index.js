@@ -18,8 +18,17 @@ rateAgainButton.addEventListener("click", () => {
   mainContainer.style.display = "block";
 });
 
+// rates.forEach((rate) => {
+//   rate.addEventListener("click", () => {
+//     rating.innerHTML = rate.innerHTML;
+//   });
+// });
 rates.forEach((rate) => {
   rate.addEventListener("click", () => {
     rating.innerHTML = rate.innerHTML;
+    submitButton.addEventListener("click", () => {
+       thankYouContainer.classList.remove("hidden");
+       mainContainer.style.display = "none";
+     });
   });
 });
