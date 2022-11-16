@@ -8,10 +8,10 @@ const rateAgainButton = document.getElementById("rate-again");
 const rating = document.getElementById("rating");
 const rates = document.querySelectorAll(".btn");
 
-submitButton.addEventListener("click", () => {
-  thankYouContainer.classList.remove("hidden");
-  mainContainer.style.display = "none";
-});
+// submitButton.addEventListener("click", () => {
+//   thankYouContainer.classList.remove("hidden");
+//   mainContainer.style.display = "none";
+// });
 
 rateAgainButton.addEventListener("click", () => {
   thankYouContainer.classList.add("hidden");
